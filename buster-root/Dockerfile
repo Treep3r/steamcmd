@@ -28,7 +28,6 @@ RUN set -x \
 		nano=3.2-3 \
 		libsdl2-2.0-0:i386=2.0.9+dfsg1-1 \
 		curl=7.64.0-4+deb10u1 \
-	&& useradd -u "${PUID}" -m "${USER}" \
 	&& su "${USER}" -c \
                 "mkdir -p \"${STEAMCMDDIR}\" \
                 && wget -qO- 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' | tar xvzf - -C \"${STEAMCMDDIR}\" \
