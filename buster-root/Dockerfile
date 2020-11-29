@@ -6,7 +6,7 @@ FROM debian:buster-slim
 LABEL maintainer="walentinlamonos@gmail.com"
 ARG PUID=1000
 
-ENV USER steam
+ENV USER root
 ENV HOMEDIR "/home/${USER}"
 ENV STEAMCMDDIR "${HOMEDIR}/steamcmd"
 
